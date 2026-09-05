@@ -7,26 +7,26 @@
 class Mandible < Formula
   desc "Universal, interactive TUI reference for CLI tools"
   homepage "https://github.com/AS-FOSS/mandible"
-  version "0.6.1"
+  version "0.7.0"
   license any_of: ["Apache-2.0", "MIT"]
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/AS-FOSS/mandible/releases/download/v#{version}/mandible-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "e2a918731937bcee0e3a023a7419b26d8fe1f93456950d055f92eabab3ccd1e3"
+      sha256 "ac1379ae4a48611d00303f4bceaceb52a88226357270749de2d750e7b578f81c"
     else
       url "https://github.com/AS-FOSS/mandible/releases/download/v#{version}/mandible-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "9db59e0d5cd7887094d556be4fb7c447ae573a50c20ae187165e1df6b841df94"
+      sha256 "8e9ba0a34fcd27e856950d9d6630935007352b28db5247f96ac99e7ed050d10b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/AS-FOSS/mandible/releases/download/v#{version}/mandible-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3df4d6dd8772c9bd15e14ead8c716e5e884df332b17515ab76661f98f4ae1c21"
+      sha256 "c3bea55e69e357cea896e4e2f79fd5fdac69d712c2efa5168a396140211df7e9"
     else
       url "https://github.com/AS-FOSS/mandible/releases/download/v#{version}/mandible-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6d035ee5877cbff8c2a820b36a4982dee1911ae588dd22e0d1e2c7713f461827"
+      sha256 "870195d1c44ebd765196aa76e2897e1c068a2ebca244644a9f27a3449e30b353"
     end
   end
 
